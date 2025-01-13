@@ -3,7 +3,6 @@ session_start();
 if (isset($_SESSION['username'])) {
     if (isset($_POST['submit_feedback'])) {
         $message = $_POST['message'];
-        // Здесь можно добавить код для обработки отзыва, например, отправка в базу данных или на email
         echo "Спасибо за ваш отзыв!";
     }
 } else {
