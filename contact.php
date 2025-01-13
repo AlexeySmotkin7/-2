@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_message'])) {
     $user_id = $_SESSION['user']['id'];
     $message = $_POST['message'];
 
-    // Сохранение сообщения в базе данных (например, в таблице messages)
+    // Сохранение сообщения в базе данных 
     $sql = "INSERT INTO messages (user_id, message) VALUES (:user_id, :message)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['user_id' => $user_id, 'message' => $message]);
