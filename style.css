@@ -8,7 +8,7 @@ html, body {
 /* Стили для хедера */
 header {
     padding: 0; /* Убираем любые отступы в контейнере хедера */
-    margin: 0;  /* Убираем маргины */
+    margin: 0;  
 }
 
 header nav {
@@ -22,8 +22,8 @@ header nav {
 header nav ul {
     list-style: none;
     display: flex;
-    margin: 0;  /* Убираем маргины */
-    padding: 0; /* Убираем отступы */
+    margin: 0;  
+    padding: 0; 
 }
 
 header nav ul li {
