@@ -1,0 +1,187 @@
+/* Общие стили для всего сайта */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для хедера */
+header {
+    padding: 0; /* Убираем любые отступы в контейнере хедера */
+    margin: 0;  /* Убираем маргины */
+}
+
+header nav {
+    display: flex;
+    justify-content: center;  /* Выравнивание меню по центру */
+    align-items: center;      /* Центрируем элементы по вертикали */
+    height: 65px;             /* Устанавливаем фиксированную высоту для хедера */
+    background-color: #333;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;  /* Убираем маргины */
+    padding: 0; /* Убираем отступы */
+}
+
+header nav ul li {
+    margin: 0 15px;  /* Уменьшаем расстояние между пунктами */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;  /* Убираем подчеркивание */
+    padding: 10px 15px;  /* Добавляем немного внутреннего отступа */
+    display: block;  /* Обеспечиваем, чтобы ссылка занимала всю высоту */
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #555;  /* Изменяем цвет при наведении */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#carousel {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+}
+
+/* Футер */
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Устанавливаем относительно для корректного позиционирования */
+    bottom: 0; /* Позиционируем футер внизу */
+    
+}
+
+/* Чтобы футер всегда был внизу страницы, даже если контента недостаточно */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Высота страницы всегда будет 100% экрана */
+}
+
+main {
+    flex: 1; /* Оставляем основной контент с гибким размером */
+}
+/* Стили для карусели */
+.carousel-item img {
+    object-fit: cover;
+    height: 400px; /* Устанавливаем фиксированную высоту для изображений */
+}
+
+/* Выравнивание и отступы */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+/* Кнопка "Подробнее" в таблице */
+.btn-details {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-details:hover {
+    background-color: #45a049;
+}
+
+/* Кнопка "Вернуться в магазин" на странице товара */
+.btn-back {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background-color: #444;
+}
+.logo{
+     display: inline-block; /* Делает контейнер логотипа блочно-строчным */
+     height: 70px; /* Устанавливает высоту логотипа */
+    width: auto;  /* Сохраняет пропорции изображения */
+    position: absolute;
+    left: 20px; /* Отступ от левого края */
+    transform: translateY(-50%);
+}
